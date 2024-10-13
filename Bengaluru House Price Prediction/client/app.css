@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f8f8f8;
+    overflow-y: scroll;
+}
+
+.img {
+    background: url('https://thevaughnrealestategroup.com/wp-content/uploads/2016/01/AdobeStock_64747679-1350x900.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(15px);
+}
+
+.composer-section {
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5) url('https://getwallpapers.com/wallpaper/full/b/8/1/489068.jpg') no-repeat center center/cover; /* Added opacity */
+    color: white; /* Adjust text color for better visibility */
+}
+
+.composer-section p {
+    font-size: 18px; /* Increase text size */
+    line-height: 1.6; /* Improve readability */
+}
+
+.profile-image {
+    max-width: 150px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.form-section {
+    background: url('https://imageio.forbes.com/specials-images/imageserve/5f594874feb9954c0331bcaf/0x0.jpg?format=jpg&width=1200') no-repeat center center/cover;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    position: relative;
+    z-index: 1; /* Ensure it's above the blurred background */
+}
+
+.form-section h2 {
+    font-size: 22px;
+    color: white; /* Keep this white for contrast */
+    font-weight: bold;
+}
+
+.form-section p, 
+.form-section label {
+    font-size: 16px;
+    color: white; /* Change to white for better contrast */
+    font-weight: bold;
+}
+
+.switch-field {
+    display: flex;
+    margin-bottom: 36px;
+    overflow: hidden;
+}
+
+.switch-field input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.switch-field label {
+    background-color: #e4e4e4;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    padding: 8px 16px;
+    margin-right: -1px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+    transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+    cursor: pointer;
+}
+
+.switch-field input:checked + label {
+    background-color: #a5dc86;
+    box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+    border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+    border-radius: 0 4px 4px 0;
+}
+
+.submit {
+    background: #a5dc86;
+    width: 76%;
+    border: 0;
+    margin: 25px 0 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.result {
+    background: #dcd686;
+    width: 76%;
+    border: 0;
+    margin: 25px 0 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
